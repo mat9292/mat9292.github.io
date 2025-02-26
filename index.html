@@ -1,84 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NailGlam - Premium Press-On Nails</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>YiRan‑nailing – Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="logo">NailGlam</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#shop">Shop</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="cart">
-                🛒 <span id="cart-count">0</span>
-            </div>
-        </div>
-    </header>
+  <header>
+    <div class="container">
+      <h1 class="logo">YiRan‑nailing</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+        🛒 <span id="cart-count">0</span>
+      </div>
+    </div>
+  </header>
 
-    <section class="hero" id="home">
-        <h2>Luxury Press-On Nails</h2>
-        <p>Salon-quality nails at your fingertips!</p>
-        <a href="#shop" class="btn">Shop Now</a>
-    </section>
+  <section class="hero">
+    <h2>Luxury Press‑On Nails</h2>
+    <p>Salon‑quality nails at your fingertips!</p>
+    <a href="products.html" class="btn">Shop Now</a>
+  </section>
 
-    <section class="shop" id="shop">
-        <h2 class="section-title">Our Collection</h2>
-        <div class="product-grid">
-            <div class="product">
-                <img src="images/1.jpg" alt="Nail Design 1">
-                <h3>Classic French Tips</h3>
-                <p>$18.99</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="images/2.jpg" alt="Nail Design 2">
-                <h3>Glitter Galaxy</h3>
-                <p>$22.99</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="images/3.jpg" alt="Nail Design 3">
-                <h3>Matte Elegance</h3>
-                <p>$19.99</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="images/4.jpg" alt="Nail Design 4">
-                <h3>Floral Fantasy</h3>
-                <p>$24.99</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-        </div>
-    </section>
+  <section class="featured-products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <!-- Product Card 1 -->
+      <div class="product-card">
+        <img src="images/1.jpg" alt="Rose Gold Nails">
+        <h3>Rose Gold Glam</h3>
+        <p class="price">$14.99</p>
+        <button onclick="addToCart('rose-gold','Rose Gold Glam',14.99)">Add to Cart</button>
+      </div>
+      <!-- Product Card 2 -->
+      <div class="product-card">
+        <img src="images/2.jpg" alt="Floral Fantasy">
+        <h3>Floral Fantasy</h3>
+        <p class="price">$12.99</p>
+        <button onclick="addToCart('floral-fantasy','Floral Fantasy',12.99)">Add to Cart</button>
+      </div>
+      <!-- Product Card 3 -->
+      <div class="product-card">
+        <img src="images/3.jpg" alt="Glitter Pink">
+        <h3>Glitter Pink</h3>
+        <p class="price">$10.99</p>
+        <button onclick="addToCart('glitter-pink','Glitter Pink',10.99)">Add to Cart</button>
+      </div>
+      <!-- Product Card 4 -->
+      <div class="product-card">
+        <img src="images/4.jpg" alt="Matte Elegance">
+        <h3>Matte Elegance</h3>
+        <p class="price">$16.99</p>
+        <button onclick="addToCart('matte-elegance','Matte Elegance',16.99)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
 
-    <section class="about" id="about">
-        <h2>About Us</h2>
-        <p>NailGlam offers premium, handcrafted press-on nails that are stylish, durable, and easy to apply.</p>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 NailGlam. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 YiRan‑nailing. All rights reserved.</p>
+  </footer>
 </body>
 </html>
