@@ -259,7 +259,7 @@ nav ul li a.active:after {
 /* Section Hero */
 .hero {
     position: relative;
-    height: 100vh; /* Hauteur plein écran */
+    height: 60vh; /* Hauteur réduite à 60% de la hauteur de l'écran au lieu de 100% */
     background-color: var(--primary-dark); /* Utilisation d'une couleur de fond au lieu d'une image */
     display: flex;
     justify-content: center;
@@ -1049,7 +1049,7 @@ footer {
 
 @media (max-width: 576px) {
     .hero {
-        height: 80vh;
+        height: 50vh;
     }
     
     .hero-content h2 {
