@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7nails | L'art au bout des doigts</title>
+    <!-- Liens vers les polices Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Lien vers Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lien vers la bibliothèque heic2any pour la conversion d'images -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/heic2any/0.0.4/heic2any.min.js"></script>
+    <!-- Feuille de style personnalisée -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- En-tête du site -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#accueil">
+                    <img src="images/logo.jpg" alt="7nails Logo" class="logo-image">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#accueil" class="active">Accueil</a></li>
+                    <li><a href="#collection">Collection</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#comment-ca-marche">Comment ça marche</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="panier">
+                <i class="fas fa-shopping-bag"></i>
+                <span id="panier-quantite">0</span>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Hero -->
+    <section id="accueil" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>L'art au bout des doigts, en un instant !</h2>
+            <p>Des ongles haute qualité, peints à la main avec des matériaux d'exception</p>
+            <a href="#collection" class="btn btn-primary">Découvrir la collection</a>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section id="introduction" class="section-padding">
+        <div class="container">
+            <div class="intro-text">
+                <h2>7nails : L'art au bout des doigts, en un instant !</h2>
+                <p>Plongez dans l'univers de la manucure réinventée avec 7nails. Nos ongles haute qualité, peints à la main avec des matériaux d'exception, offrent une finition aussi raffinée qu'en institut. Faciles à poser et à retirer, ils s'adaptent à toutes vos envies, sans rendez-vous ni attente. Réutilisables, économiques et écoresponsables, ils subliment vos mains avec élégance et liberté. Exprimez votre style, à chaque instant !</p>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Peints à la main</h3>
+                    <p>Chaque set est une œuvre d'art unique, créée avec passion et minutie</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-gem"></i>
+                    <h3>Matériaux premium</h3>
+                    <p>Conçus avec des matériaux de haute qualité pour une finition luxueuse</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Écoresponsable</h3>
+                    <p>Réutilisables et durables pour une beauté qui respecte l'environnement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection -->
+    <section id="collection" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Collection</h2>
+                <p>Découvrez nos créations artistiques pour sublimer vos mains</p>
+            </div>
+            
+            <!-- La grille de produits sera remplie dynamiquement par JavaScript -->
+            <div class="products-grid" id="products-container">
+                <!-- Les produits seront chargés ici via JavaScript -->
+                <div class="loading">Chargement de la collection...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comment ça marche -->
+    <section id="comment-ca-marche" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comment ça marche</h2>
+                <p>Simple, rapide et facile à utiliser</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Choisissez</h3>
+                    <p>Sélectionnez le design qui vous inspire dans notre collection</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Appliquez</h3>
+                    <p>Posez vos ongles en quelques minutes grâce à notre adhésif spécial</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Admirez</h3>
+                    <p>Profitez d'une manucure parfaite qui dure jusqu'à 2 semaines</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Réutilisez</h3>
+                    <p>Conservez vos ongles pour une prochaine utilisation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="apropos" class="section-padding bg-light">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- Image remplacée par un design -->
+                    <img src="images/logo.jpg" alt="7nails - À propos" style="width: 150px; height: auto;">
+                </div>
+                <div class="about-text">
+                    <h2>Notre Histoire</h2>
+                    <p>Née d'une passion pour l'art et la beauté, 7nails a été créée pour offrir une alternative élégante aux manucures traditionnelles. Notre fondatrice, fascinée par l'art des ongles mais frustrée par le temps passé en salon, a imaginé une solution qui allie qualité professionnelle et liberté d'expression.</p>
+                    <p>Chaque collection est conçue en France avec amour et précision, en utilisant des techniques artisanales qui donnent vie à des créations uniques. Notre engagement pour l'excellence se reflète dans chaque détail, du choix des matériaux à la finition parfaite.</p>
+                    <p>7nails incarne l'élégance à la française : raffinée, intemporelle et accessible. Nous croyons que chaque femme mérite de se sentir spéciale au quotidien, sans compromis sur la qualité ou le style.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section id="temoignages" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ce que nos clientes disent</h2>
+                <p>Découvrez pourquoi nos clientes adorent 7nails</p>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Mes ongles 7nails ont fait sensation lors de mon mariage ! Faciles à poser et magnifiques, ils ont parfaitement complété ma tenue.</p>
+                    </div>
+                    <div class="author">
+                        <h4>Sophie M.</h4>
+                        <p>Paris</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>En tant que médecin, j'ai besoin de mains impeccables mais je n'ai pas le temps d'aller en salon. 7nails est la solution parfaite !</p>
+                    </div>
+                    <div class="author">
+                        <h4>Claire D.</h4>
+                        <p>Lyon</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>J'adore pouvoir changer de style selon mes humeurs. La qualité est remarquable et ils durent vraiment longtemps !</p>
+                    </div>
+                    <div class="author">
+                        <h4>Marie L.</h4>
+                        <p>Bordeaux</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Contactez-nous</h2>
+                    <p>Nous sommes à votre disposition pour répondre à toutes vos questions</p>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>contact@7nails.fr</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+33 1 23 45 67 89</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="section-padding-sm">
+        <div class="container">
+            <div class="newsletter-container">
+                <div class="newsletter-text">
+                    <h3>Rejoignez la communauté 7nails</h3>
+                    <p>Inscrivez-vous à notre newsletter pour recevoir nos nouveautés et offres exclusives</p>
+                </div>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <button type="submit" class="btn btn-secondary">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Panier -->
+    <div id="panier-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Votre Panier</h2>
+            <div id="panier-items">
+                <!-- Les articles du panier seront chargés ici -->
+            </div>
+            <div class="panier-total">
+                <p>Total: <span id="panier-total-prix">0,00 €</span></p>
+            </div>
+            <button id="commander-btn" class="btn btn-primary">Passer commande</button>
+        </div>
+    </div>
+
+    <!-- Modal Produit -->
+    <div id="produit-modal" class="modal">
+        <div class="modal-content produit-modal-content">
+            <span class="close">&times;</span>
+            <div id="produit-details">
+                <!-- Les détails du produit seront chargés ici -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>7nails</h3>
+                    <p>L'art au bout des doigts, en un instant !</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#collection">Collection</a></li>
+                        <li><a href="#apropos">À propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="#">Livraison</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 7nails. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
